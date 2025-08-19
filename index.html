@@ -4,196 +4,178 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Abinaya Tamilarasan - Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <style>
-    /* General Reset */
     * { margin: 0; padding: 0; box-sizing: border-box; }
-
     body {
-      font-family: "Segoe UI", Arial, sans-serif;
-      background: #f4f6f8;
+      font-family: "Poppins", sans-serif;
+      background: #f2f4f7;
       color: #333;
-      line-height: 1.6;
     }
-
     .container {
-      max-width: 1000px;
+      max-width: 1100px;
       margin: 40px auto;
       background: #fff;
-      padding: 40px;
       border-radius: 12px;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      overflow: hidden;
     }
-
-    header {
+    .sidebar {
+      background: #1d3557;
+      color: #fff;
+      padding: 30px 20px;
       text-align: center;
-      margin-bottom: 30px;
     }
-
-    header h1 {
-      font-size: 32px;
-      color: #2c3e50;
+    .sidebar img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #fff;
+      margin-bottom: 15px;
     }
-
-    header h3 {
-      color: #555;
-      margin-top: 5px;
-    }
-
-    .contact {
-      margin-top: 10px;
-      font-size: 15px;
-    }
-
-    .contact a {
-      color: #0077b6;
-      text-decoration: none;
-    }
-
-    h2 {
-      margin-top: 30px;
-      margin-bottom: 10px;
+    .sidebar h1 {
       font-size: 22px;
+      margin-bottom: 5px;
+    }
+    .sidebar h3 {
+      font-weight: 400;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    .sidebar a {
+      color: #a8dadc;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+    .sidebar h2 {
+      font-size: 18px;
+      border-bottom: 1px solid #457b9d;
+      margin: 20px 0 10px;
+      padding-bottom: 5px;
+      text-align: left;
+    }
+    .tag {
+      display: inline-block;
+      background: #457b9d;
+      color: #fff;
+      padding: 4px 10px;
+      border-radius: 20px;
+      margin: 3px;
+      font-size: 13px;
+    }
+    .main {
+      padding: 30px 40px;
+    }
+    .main h2 {
+      font-size: 20px;
       color: #1d3557;
-      border-bottom: 2px solid #ddd;
+      border-bottom: 2px solid #eee;
+      margin-bottom: 15px;
       padding-bottom: 4px;
     }
-
-    p, li {
+    .main p, .main li {
+      font-size: 15px;
       margin-bottom: 10px;
     }
-
-    ul {
-      padding-left: 20px;
-    }
-
     .job {
       margin-bottom: 15px;
     }
-
     .job strong {
-      color: #2c3e50;
+      color: #1d3557;
     }
-
     .project {
       margin-bottom: 15px;
     }
-
-    .tag {
-      display: inline-block;
-      background: #e9f5ff;
-      color: #0077b6;
-      padding: 4px 8px;
-      border-radius: 6px;
-      margin: 3px 5px 3px 0;
-      font-size: 13px;
-    }
-
     footer {
       text-align: center;
-      margin-top: 30px;
-      font-size: 14px;
-      color: #777;
+      font-size: 13px;
+      color: #666;
+      padding: 15px;
+      background: #f9fafc;
+      grid-column: span 2;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <header>
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <img src="profile.jpg" alt="Profile Photo">
       <h1>Abinaya Tamilarasan</h1>
       <h3>Test Automation Engineer</h3>
-      <p class="contact">
-        📞 +91 7305929495 | ✉️ <a href="mailto:abinaya.ta123@gmail.com">abinaya.ta123@gmail.com</a><br>
-        🔗 <a href="https://www.linkedin.com/in/abinaya-tamilarasann-21b448260/" target="_blank">LinkedIn Profile</a>
-      </p>
-    </header>
+      <a href="mailto:abinaya.ta123@gmail.com">📧 abinaya.ta123@gmail.com</a>
+      <a href="tel:+917305929495">📞 +91 7305929495</a>
+      <a href="https://www.linkedin.com/in/abinaya-tamilarasann-21b448260/" target="_blank">🔗 LinkedIn</a>
 
-    <h2>Profile Summary</h2>
-    <p>Dynamic Automation Testing Professional with around 4 years of experience specializing in Automation and Manual Testing. Proven expertise in Selenium (Java, Python, C#), TestNG, Pytest, SpecFlow, BDD frameworks delivering robust and efficient test suites. Skilled in API testing with Postman, data scraping, validation, UAT, Agile methodologies, and test management using JIRA and Zephyr.</p>
-
-    <h2>Academic Profile</h2>
-    <p><strong>Bachelor of Engineering</strong>, Anna University, Chennai (2017 – 2021)<br>
-    CGPA: 9.21 – Silver Medalist (2nd AU Rank)</p>
-
-    <h2>Technical Skills</h2>
-    <div>
-      <span class="tag">Selenium WebDriver</span>
-      <span class="tag">TestNG</span>
-      <span class="tag">Maven</span>
-      <span class="tag">Pytest</span>
-      <span class="tag">SpecFlow BDD</span>
-      <span class="tag">C#</span>
-      <span class="tag">Java 8</span>
-      <span class="tag">Python 3</span>
-      <span class="tag">Appium</span>
-      <span class="tag">MySQL</span>
-      <span class="tag">Postman</span>
-      <span class="tag">JIRA</span>
-      <span class="tag">Bugzilla</span>
-      <span class="tag">Azure Test Plans</span>
-      <span class="tag">GitHub</span>
-      <span class="tag">Jenkins</span>
+      <h2>Skills</h2>
+      <div>
+        <span class="tag">Selenium</span>
+        <span class="tag">TestNG</span>
+        <span class="tag">Maven</span>
+        <span class="tag">Pytest</span>
+        <span class="tag">SpecFlow</span>
+        <span class="tag">Java</span>
+        <span class="tag">Python</span>
+        <span class="tag">C#</span>
+        <span class="tag">Appium</span>
+        <span class="tag">MySQL</span>
+        <span class="tag">Jenkins</span>
+        <span class="tag">Postman</span>
+        <span class="tag">JIRA</span>
+      </div>
     </div>
 
-    <h2>Training & Certifications</h2>
-    <ul>
-      <li>ISTQB Certified Tester Foundation Level v4.0 (2024)</li>
-      <li>Scrum Fundamentals Certified (SCRUMstudy)</li>
-      <li>Selenium Web Automation with Python & Jenkins</li>
-      <li>API Automation with Python and BDD Framework</li>
-      <li>Manual Testing, MySQL Database Testing, Data Analysis with Excel</li>
-    </ul>
+    <!-- Main Content -->
+    <div class="main">
+      <h2>Profile Summary</h2>
+      <p>Dynamic Automation Testing Professional with ~4 years of experience specializing in Automation and Manual Testing. Proven expertise in Selenium (Java, Python, C#), TestNG, Pytest, SpecFlow, BDD. Skilled in API testing, Postman, data scraping, validation, UAT, Agile methodologies, and test management using JIRA and Zephyr.</p>
 
-    <h2>Professional Experience</h2>
-    <div class="job">
-      <strong>Test Automation Engineer</strong><br>
-      Cubematch Technologies Pvt Ltd, Chennai<br>
-      Jun 2024 – Jul 2025
-    </div>
-    <div class="job">
-      <strong>Associate Software Test Engineer</strong><br>
-      Merit Data and Technology Pvt Ltd, Chennai<br>
-      Aug 2021 – Jun 2024
-    </div>
+      <h2>Academic Profile</h2>
+      <p><strong>Bachelor of Engineering</strong>, Anna University, Chennai (2017 – 2021)<br>CGPA: 9.21 – Silver Medalist (2nd AU Rank)</p>
 
-    <h2>Project Experience</h2>
+      <h2>Training & Certifications</h2>
+      <ul>
+        <li>ISTQB Certified Tester Foundation Level v4.0 (2024)</li>
+        <li>Scrum Fundamentals Certified (SCRUMstudy)</li>
+        <li>Selenium Web Automation with Python & Jenkins</li>
+        <li>API Automation with Python and BDD Framework</li>
+        <li>Manual Testing, MySQL Database Testing, Data Analysis with Excel</li>
+      </ul>
 
-    <div class="project">
-      <strong>Deimos Application (Banking Domain)</strong> (Jun 2024 – Mar 2025)<br>
-      Automated regression & BDD test cases with Selenium C# SpecFlow, implemented Page Object Model, data-driven framework, and generated reports.
-    </div>
+      <h2>Professional Experience</h2>
+      <div class="job">
+        <strong>B2 - Consultant - Test Automation Engineer</strong><br>
+        Capgemini Technology Services, Chennai<br>
+        Aug 2025 – Current
+      </div>
+      <div class="job">
+        <strong>Test Automation Engineer</strong><br>
+        Cubematch Technologies Pvt Ltd, Chennai<br>
+        Jun 2024 – Jul 2025
+      </div>
+      <div class="job">
+        <strong>Associate Software Test Engineer</strong><br>
+        Merit Data and Technology Pvt Ltd, Chennai<br>
+        Aug 2021 – Jun 2024
+      </div>
 
-    <div class="project">
-      <strong>LNRS-MBS Genome (Insurance Domain)</strong> (Aug 2023 – May 2024)<br>
-      Automated regression cases using Selenium C# NUnit, ReportUnit. Validated pricing, contracts, Salesforce CLM, Docusign CLM integration, and billing automation.
-    </div>
-
-    <div class="project">
-      <strong>LNRS-Accuity Migration (Azure Cloud)</strong> (Jan 2023 – Jul 2023)<br>
-      Manual + Selenium Java (TestNG) automation for cloud migration of Master Backoffice Systems (MBS), ensuring compliance with PCI DSS, TLS, EMV, SWIFT protocols.
-    </div>
-
-    <div class="project">
-      <strong>JATO BAU (Automobile Domain)</strong> (Aug 2022 – Dec 2022)<br>
-      Automated UI & API testing using Pytest for 30+ OEM websites (Audi, BMW, Hyundai, etc.) across multiple regions.
-    </div>
-
-    <div class="project">
-      <strong>Data Enhancement - BIP</strong> (May 2022 – Jul 2022)<br>
-      Data cleaning, normalization, deduplication, defect analysis in ML outputs, Excel-based validation to improve data completeness and accuracy.
-    </div>
-
-    <div class="project">
-      <strong>Wriggler</strong> (Mar 2022 – Apr 2022)<br>
-      Functional & data testing of generic scraper engine for multiple sources (e-commerce, media, social, etc.), Agile sprint testing, bug reporting & retesting.
-    </div>
-
-    <div class="project">
-      <strong>Newscraft Product</strong> (Nov 2021 – Feb 2022)<br>
-      Functional testing & automation using TestNG, cross-browser validation, and MVP test case development for a subscription-based news curation platform.
+      <h2>Project Experience</h2>
+      <div class="project"><strong>Deimos Application (Banking Domain)</strong> – Automated regression & BDD test cases with Selenium C# SpecFlow, POM, and reporting.</div>
+      <div class="project"><strong>LNRS-MBS Genome (Insurance Domain)</strong> – Selenium C# NUnit automation, pricing validation, Salesforce CLM & Docusign testing.</div>
+      <div class="project"><strong>LNRS-Accuity Migration</strong> – Manual + Selenium Java TestNG automation for Azure migration of MBS systems.</div>
+      <div class="project"><strong>JATO BAU</strong> – Pytest UI & API automation for 30+ automobile OEM websites.</div>
+      <div class="project"><strong>Data Enhancement - BIP</strong> – Data cleaning, normalization, deduplication, and ML model validation in Excel.</div>
+      <div class="project"><strong>Wriggler</strong> – Functional & data testing for scraper engine with Agile sprints.</div>
+      <div class="project"><strong>Newscraft Product</strong> – Functional + TestNG automation, cross-browser validation for MVP news curation tool.</div>
     </div>
 
     <footer>
-      <p>© 2025 Abinaya Tamilarasan | Built with HTML & CSS</p>
+      © 2025 Abinaya Tamilarasan | Built with HTML & CSS
     </footer>
   </div>
 </body>
